@@ -24,7 +24,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cadillac Syndicate" />
   <meta name="twitter:description" content="Classic Cadillacs. Lowrider culture. Real community." />
-  <meta name="twitter:image" content="https://img.cadillacsyndicate.com/Post%205.jpg" />
+  <meta name="twitter:image" content="https://img.cadillacsyndicate.com/Post-5.webp" />
+
+<link rel="preconnect" href="https://img.cadillacsyndicate.com">
 
 <style>
 * {
@@ -41,14 +43,21 @@ body {
 }
 
 /* HERO SECTION */
+
+
 .hero {
-    height: 100vh;
-    background: url('https://img.cadillacsyndicate.com/Post%205.jpg') center/cover no-repeat;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height: 100vh;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .hero::after {
@@ -191,23 +200,25 @@ body {
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-content fade">
-        <img src="https://img.cadillacsyndicate.com/CS-Tire_web.png" class="hero-logo" alt="Cadillac Syndicate">
+  <img 
+    src="https://img.cadillacsyndicate.com/Post-5.webp"
+    alt="Cadillac Syndicate Hero"
+    class="hero-bg"
+    fetchpriority="high"
+    width="1920"
+    height="1080"
+  >
 
-        <h1>Cadillac Syndicate — The Classic Cadillac Network</h1>
-        <p>Built for the members. No egos. No politics. All Cadillacs. All eras.</p>
+  <div class="hero-content fade">
+    <img src="https://img.cadillacsyndicate.com/CS-Tire_web.png" 
+         class="hero-logo" 
+         alt="Cadillac Syndicate">
 
-        <a href="#apply" class="btn">Apply to Start a Chapter</a>
-    </div>
-</section>
+    <h1>Cadillac Syndicate — The Classic Cadillac Network</h1>
+    <p>Built for the members. No egos. No politics. All Cadillacs. All eras.</p>
 
-<!-- PHILOSOPHY -->
-<section class="section fade">
-    <h2>Not a Car Club</h2>
-    <p>
-        Cadillac Syndicate is not a traditional car club. It’s a network of independently run chapters 
-        connected by a shared standard — presence, respect, and real Cadillac culture.
-    </p>
+    <a href="#apply" class="btn">Apply to Start a Chapter</a>
+  </div>
 </section>
 
 <!-- VALUES -->
@@ -235,9 +246,9 @@ body {
 <section class="section media fade">
     <h2>Media</h2>
     <div class="grid grid-3">
-        <img src="https://img.cadillacsyndicate.com/Post%205.jpg" alt="Classic Cadillac meet and lowrider cars">
-        <img src="https://img.cadillacsyndicate.com/Post%205.jpg" alt="Classic Cadillac meet and lowrider cars">
-        <img src="https://img.cadillacsyndicate.com/Post%205.jpg" alt="Classic Cadillac meet and lowrider cars">
+        <img src="https://img.cadillacsyndicate.com/Media.webp" loading="lazy" alt="Classic Cadillac meet and lowrider cars">
+        <img src="https://img.cadillacsyndicate.com/Media.webp" loading="lazy" alt="Classic Cadillac meet and lowrider cars">
+        <img src="https://img.cadillacsyndicate.com/Media.webp" loading="lazy" alt="Classic Cadillac meet and lowrider cars">
     </div>
 </section>
 
